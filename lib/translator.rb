@@ -3,8 +3,15 @@ require "yaml"
 
 def load_library(file_path)
   library = YAML.load_file(file_path)
+  meaning_array = library.keys
+  emoticons_array = library.values
   get_meaning = {}
   get_emoticon = {}
+
+  emoticons_array.each_with_index do |emoticons,index|
+    get_meaning[emoticons[0]] = meaning_array[index]
+  end
+  
   new_hash = {
     get_meaning:get_meaning,
     get_emoticon:get_emoticon
