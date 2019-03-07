@@ -6,6 +6,8 @@ def load_library(file_path)
   get_meaning = library.keys
   get_emoticon = library.values
   #return get_meaning,get_emoticon
+  binding.pry
+  puts "un-bind"
   return library
 end
 
