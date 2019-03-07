@@ -16,8 +16,8 @@ def load_library(file_path)
   #   get_meaning:get_meaning,
   #   get_emoticon:get_emoticon
   # }
-  # binding.pry
-  # puts "un-bind"
+  binding.pry
+  puts "un-bind"
   return new_hash
 end
 
