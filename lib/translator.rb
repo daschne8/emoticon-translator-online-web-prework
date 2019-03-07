@@ -12,10 +12,10 @@ def load_library(file_path)
     get_meaning[emoticons[0]] = meaning_array[index]
   end
 
-  new_hash = {
-    get_meaning:get_meaning,
-    get_emoticon:get_emoticon
-  }
+  # new_hash = {
+  #   get_meaning:get_meaning,
+  #   get_emoticon:get_emoticon
+  # }
   # binding.pry
   # puts "un-bind"
   return new_hash
