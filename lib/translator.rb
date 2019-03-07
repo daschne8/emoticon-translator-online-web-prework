@@ -11,7 +11,7 @@ def load_library(file_path)
   emoticons_array.each_with_index do |emoticons,index|
     get_meaning[emoticons[0]] = meaning_array[index]
   end
-  
+
   new_hash = {
     get_meaning:get_meaning,
     get_emoticon:get_emoticon
